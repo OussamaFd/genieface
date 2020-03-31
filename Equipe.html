@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Génie Face</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		
+ <!-- /* ----START OF SOCIALMEDIA'S CSS---- */ -->
+
+.somedia{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.social{
+	position:relative;
+	<!-- background-color:rgba(0,0,0,0.2); -->
+	width:90px;
+	height::90px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:20%;
+	overflow:hidden;
+	margin-left: 35px;
+}
+.social img{
+	z-index:2;
+	width:90px;
+	height:90px;
+}
+.facebook, .whatsapp, .instagram, .youtube, .gmail, .twitter, .telegram{
+	top:-90px;
+	z-index:1;
+	display:block;
+	height:90px;
+	width:90px;
+	position:absolute;
+	transition:0.5s;
+	background-color:#55acec;
+}
+.facebook{
+	background-color:#3b5998;
+}
+.whatsapp{
+	background-color:#25d366;
+}
+.instagram{
+	background-color:#c32aa3;
+}
+.youtube{
+	background-color:#ff0000;
+}
+.telegram{
+	background-color:#0088cc;
+}
+.gmail{
+	background-color:#ea4335;
+}
+.twitter{
+	background-color:#1da1f2;
+}
+.social:hover .facebook{
+	top:0;
+}
+.social:hover .whatsapp{
+	top:0;
+}
+.social:hover .instagram{
+	top:0;
+}
+.social:hover .youtube{
+	top:0;
+}
+.social:hover .gmail{
+	top:0;
+}
+.social:hover .twitter{
+	top:0;
+}
+.social:hover .telegram{
+	top:0;
+}
+
+<!-- /* ----END OF SOCIALMEDIA'S CSS---- */ -->
+
+			*{
+				box-sizing:border-box;
+			}
+			
+			.page{
+				width:1700px;
+				margin:auto;
+				font-family:'Source sans Pro', calibri , Tahoma ,sans-ser;
+				font-size:19px;
+				border-width:4px;
+				border-style:outset;
+				border-color:cadetblue;
+			}
+
+			.logo{
+				background-color:#ebebe0;
+			}
+			
+			table{
+				display:table;
+				background-color:#ebebe0;
+			}
+			
+			.img1{
+				float:none;
+			}
+			
+			.pn1{
+			color:#ebebe0;
+			}
+			
+			.tb3{
+				background-color:white;
+			}
+			
+			.p1{
+				line-height:2em;
+				font-family:cursive;
+				color:#595959;
+			}
+			
+			.pn2{
+				color:#ebebe0;
+			}
+			
+			body{
+				font-family:Arial;
+				margin:0;
+			}
+
+			/* Style the top navigation bar */
+
+			ul{
+				list-style-type: none;
+				margin:0;
+				padding:0;
+				overflow:hidden;
+				background-color:#333;
+				position:-webkit-sticky; /* Safari */
+				position:sticky;
+				top:0;
+			}
+
+			li{
+				float:left;
+			}
+
+			li a{
+				display:block;
+				color:white;
+				text-align:center;
+				font-family:monospace;  
+				padding:15px 17px;
+				text-decoration:none;
+			}
+
+			li a:hover{
+				background-color:darkslategrey;
+			}
+
+			.active{
+				background-color:#008080;
+			}
+			
+			.row{  
+				display:flex;
+				flex-wrap:wrap;
+			}
+
+			/* Create two unequal columns that sits next to each other */
+			/* Sidebar/left column */
+			
+			.side{
+				flex:22%;
+				background-color:#f1f1f1;
+				padding:20px;
+			}
+			
+			.h22{
+				color:#333;
+				font-family:inherit ;
+				font-size:25px;
+			}
+			
+			.logof{
+				border:solid;
+				border-color:gray;
+			}
+
+			/* Main column */
+			
+			.main{
+				flex:70%;
+				background-color:white;
+				padding:20px;
+			}
+			
+			.h2{
+				color:darkslategrey;
+				font-family:cursive;
+				text-align:center;
+			}
+
+			/* Fake image, just for this example */
+			
+			.fakeimg{
+				background-color:#aaa;
+				width:100%;
+				padding:20px;
+			}
+			
+			.proto{
+				color:white;
+			}
+			
+			.protoc{
+				color:white;
+			}
+			
+			.recon{
+				float:center;
+				border-radius:4em;
+			}
+			
+			/* Footer */
+			
+			.footer{
+				padding:10px;
+				text-align:center;
+				background:#aaa;
+				padding-bottom:20px;
+			}
+
+			/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+			
+			@media screen and (max-width: 700px){
+				.row, .navbar{   
+					flex-direction:row;
+				}
+			}
+			
+			#tb1{
+				max-width:100%;
+				height:100%;
+			}
+			
+			pre.alignright{
+				text-align:justify;
+				font-size:20px;
+				color:black;
+				line-height:1.7em;  
+			}
+			
+			.text{
+				font-family:fantasy;
+				font-size:30px;
+				color:#333;
+				font-style:oblique;
+			}
+
+			float: left;
+			}
+			
+			.pagination{
+				display:inline-block;
+			}
+
+			.pagination a{
+				color:black;
+				float:left;
+				padding:18px 28px;
+				text-decoration:none;
+			}
+
+			.pagination a.active{
+				background-color:darkslategray;
+				color:white;
+			}
+
+			.pagination a:hover:not(.active){
+				background-color:#ddd;
+			}
+
+		</style>
+	</head>
+	<body>
+<div class="page">
+   
+
+<div style="background:#595959;padding:8px">
+     <h4 ></h4>
+    </div>
+
+<table style="align-items: center" id ="tb1">
+    <tr >
+        <td>
+            <img class="img1" src="logo3.png" width="400"
+         height="170px"/> 
+            </td> 
+        <td><h4 class="pn1">................................................</h4></td>
+        <td> <h3 class="p1" style="text-align:center" >Avec Génie Face pour la sécurité <br>ne pouvez entrer que par votre identité  </h3 >  </td>    
+        <td><h4 class="pn2">........................................................................................................;;;  </h4>
+        </td>
+     
+           </tr>    
+         </table>
+    
+        
+<!-- Navigation Bar -->
+<!-- Header -->
+
+<!-- Navigation Bar -->
+<ul>
+	<li><a href="index.html">Accueil</a></li>
+	<li><a class="active" href="Equipe.html">Qui sommes nous ? </a></li>
+	<li><a href="Produit.html">Composants utilisés</a></li>
+	<li><a href="ESP32.html">Contactez-nous</a></li>
+</ul>
+     <img src="redaa.jfif" width="100%"  height="480px"   >
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+      <pre>
+      
+      
+      
+      
+      
+      
+      </pre>
+    <h2 class="text">  Génie Face Sécurité  </h2>
+      <pre class="h22">
+       Equipe 100% dédiée 
+          ses efforts pour 
+    protérger votre activités
+
+</pre>
+    
+   <img class="logof" src="BANNIERE_LG.png" width="300px" height="200pX">
+    
+      <pre class="h22">
+      
+       Equipe de la faculté
+ des sciences et techniques 
+             de Tanger
+
+</pre>
+      <img class="logof" src="logofst.png" width="300px" height="200pX">  
+  </div>
+  <div class="main">
+    
+    
+       <h2 class="h2">Présentation de l'equipe <strong> "Génie Face </strong> </h2>
+     <hr>
+      <pre>
+      </pre>
+      <table class="tb3">
+          <td><p class="proto">............................</p></td>
+          <td>
+              <img  src="redaaa.jfif" height="400px" width="1100px"></td>
+      </table>
+     <pre class="alignright" >                              <strong>" Installer , cabler , mettre en service des solutions de sécurité électronique
+                                   en utilisant l'accès par identification des visages et des carte RFID " </strong></pre>
+      
+       <pre class="alignright" >  
+       <strong>       "Genie face"</strong> est un équipe composé de 11 personnes étudiant à  la faculté des sciences et
+       techniques de Tanger ,  notre projet est basé  sur le progré  technologique ce qui permettra 
+       d'acrroitre la  précision ,  réduire considérablement les couts et d’ajouter une  valeur ajoutée , 
+       qui donnera  l’utilisateur la  possibilité de passer la frontière et assurer  son accès dans le 
+       domaine médicale . le projet relèvera quelques défis spécifiques de la sécurité de tous les hôpitaux,
+       laboratoires généraux, centres de tests sanguins et centres de radiologie, à savoir comment traiter
+       les données d’une manière efficace et  l’encouragement de la dépendance aux nouvelles technologies, 
+       et la réponse aux problèmes touchant aux données et à l’information dans le domaine qu’on la sait 
+       très bien grâce à nos sorties de suggestions et  d'enquête et  vers les cliniques et les laboratoires....
+       ........................................................................................................
+       ........................................................................................................
+       ........................................................................................................
+       
+       
+       </pre> 
+      <hr>
+      <h2 class="h2">les membres d'équipe  </h2>
+      
+     <pre class="alignright">              
+     
+         <strong>Reda Fdili :</strong>  le gestionnaire et le représentant de l'équipe
+         <strong>Belhoussine Layla :</strong> Resbonsable du site web .
+         <strong> Fatima zohra Elmadani :</strong> Resbonsable de la technologie RFID
+         <strong> flouchi chayma :</strong>      
+             
+          <strong> Assia :</strong>
+            
+          <strong> Khalid Esraydi</strong>
+          ..........................................................................
+          ............................................................................
+          ............................................................................
+          ............................................................................
+          .............................................................................
+      
+      
+     
+      </pre>
+      <pre class="alignright">
+            <strong>              L'innovation technologique et la qualité de service sont au coeur de notre ADN,
+               Faite le choix de l'exignece en choisissant un acteur national  de la protectio des professionels .</strong>
+               
+               </pre>
+      <hr>
+      <h2 class="h2">Quels sont notre clients ? </h2>
+      <pre>
+      </pre>
+      <pre class="alignright">        Notre client sont principalement les différets services de la santé :
+      
+                            <strong>*</strong>les laboratoires .
+                            
+                            <strong>*</strong>Les cléniques .
+                            
+                            <strong>*</strong> les hopitaux .
+                            
+                            <strong>*</strong>Les centres des dialyzes .
+                            
+                            <strong>*</strong>..........
+      </pre>
+      <hr>
+      <h2 class="h2">  Mission  </h2>
+           <pre class="alignright"> 
+           Les mission partagé par tous l'équipe de <strong>"Génie Face" </strong> sont  
+           </pre>
+    <table class="tb3">
+          <td><p class="proto">..........................................</p></td>
+          <td>
+              <img  src="vision2.jfif" height="500px" width="900px"></td>
+      </table>
+      <pre>
+      
+      </pre>
+      <hr>
+       <h2 class="h2">  Vision </h2>
+      <pre class="alignright">            
+      La vision de notre équipe <strong>"Génie Face" </strong> pour la sécurité est :
+      </pre>
+           
+      <table class="tb3">
+          <td><p class="proto">..........................................</p></td>
+          <td>
+              <img  src="mission2.jfif" height="500px" width="900px"></td>
+      </table>
+           <pre>
+           
+           
+           
+           
+           </pre>
+    
+         <hr>
+    
+
+<div class="pagination">
+  <a href="index.html">&laquo;</a>
+  <a href="index.html">1</a>
+  <a class="active" href="Equipe.html">2</a>
+  <a href="Produit.html">3</a>
+  <a href="ESP32.html">4</a>
+  <a href="ESP32.html">&raquo;</a>
+</div>
+
+  
+
+
+		<!-- Footer -->
+
+		</div>
+
+
+		</div>
+		<div class="footer">
+		<h2>Vous pouvez également nous trouver sur les réseaux sociaux.</h2>
+  <div class="somedia">
+		<a href="https://www.youtube.com/channel/UCFxJDlZPDuSc_5_7FVEsxfw/?guided_help_flow=5" class="social"><img src="youtube.png" alt="Youtube"><div class="youtube"></div></a>
+		<a href="https://t.me/joinchat/PJEFtkm0axWxrHkbtiuaSg" class="social"><img src="telegram.png" alt="Telegram"><div class="telegram"></div></a>
+		<a href="https://www.facebook.com/G%C3%A9nie-Face-109413884046757/" class="social"><img src="facebook.png" alt="Facebook"><div class="facebook"></div></a>
+		<a href="https://chat.whatsapp.com/IP0A769P2DS8OfTHfGlUHd" class="social"><img src="whatsapp.png" alt="Whatsapp"><div class="whatsapp"></div></a>
+		<a href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSGKnGdhwzkzPbDfnXWMjmnhWRppHcPtFgDfhbkKdWztjsSFvtKfLdFhxXPSdMDdSjXZPQCM" class="social"><img src="gmail.png" alt="Gmail"><div class="gmail"></div></a>
+		<a href="https://twitter.com/face_genie" class="social"><img src="twitter.png" alt="Twitter"><div class="twitter"></div></a>
+		<a href="https://www.instagram.com/genieface2020?r=nametag" class="social"><img src="instagram.png" alt="Instagram"><div class="instagram"></div></a>
+	</div>
+
+		</div>
+
+
+
+
+		</div>
+	</body>
+</html>

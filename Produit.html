@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Génie Face</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		
+ <!-- /* ----START OF SOCIALMEDIA'S CSS---- */ -->
+
+.somedia{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.social{
+	position:relative;
+	<!-- background-color:rgba(0,0,0,0.2); -->
+	width:90px;
+	height::90px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:20%;
+	overflow:hidden;
+	margin-left: 35px;
+}
+.social img{
+	z-index:2;
+	width:90px;
+	height:90px;
+}
+.facebook, .whatsapp, .instagram, .youtube, .gmail, .twitter, .telegram{
+	top:-90px;
+	z-index:1;
+	display:block;
+	height:90px;
+	width:90px;
+	position:absolute;
+	transition:0.5s;
+	background-color:#55acec;
+}
+.facebook{
+	background-color:#3b5998;
+}
+.whatsapp{
+	background-color:#25d366;
+}
+.instagram{
+	background-color:#c32aa3;
+}
+.youtube{
+	background-color:#ff0000;
+}
+.telegram{
+	background-color:#0088cc;
+}
+.gmail{
+	background-color:#ea4335;
+}
+.twitter{
+	background-color:#1da1f2;
+}
+.social:hover .facebook{
+	top:0;
+}
+.social:hover .whatsapp{
+	top:0;
+}
+.social:hover .instagram{
+	top:0;
+}
+.social:hover .youtube{
+	top:0;
+}
+.social:hover .gmail{
+	top:0;
+}
+.social:hover .twitter{
+	top:0;
+}
+.social:hover .telegram{
+	top:0;
+}
+
+<!-- /* ----END OF SOCIALMEDIA'S CSS---- */ -->
+
+			.page{
+				width:1700px;
+				margin:auto;
+				font-family:'Source sans Pro', calibri , Tahoma ,sans-ser;
+				font-size:19px;
+				border-width:4px;
+				border-style:outset;
+				border-color:cadetblue;
+			}
+			
+			.logo{
+				background-color:#ebebe0;
+			}
+			
+			table{
+				display:table;
+				background-color:#ebebe0;
+			}
+			
+			.img1{
+				float:none;
+			}
+			
+			.pn1{
+				color:#ebebe0;
+			}
+			
+			.p1{
+				line-height:2em;
+				font-family:cursive;
+				color: #595959;
+			}
+			
+			.pn2{
+				color:#ebebe0;
+			}
+			
+			body{
+				font-family:Arial;
+				margin:0;
+			
+			}
+			
+			/* Style the top navigation bar */
+			
+			ul{
+				list-style-type:none;
+				margin:0;
+				padding:0;
+				overflow:hidden;
+				background-color:#333;
+				position:-webkit-sticky; /* Safari */
+				position:sticky;
+				top:0;
+			}
+			
+			li{
+				float:left;
+			}
+			
+			li a{
+				display:block;
+				color:white;
+				text-align:center;
+				font-family:monospace;  
+				padding:15px 17px;
+				text-decoration:none;
+			}
+			
+			li a:hover{
+				background-color:darkslategrey;
+			}
+			
+			.active{
+				background-color:#008080;
+			}
+			
+			/* Column container */
+			
+			.row{  
+				display:flex;
+				flex-wrap:wrap;
+			}
+			
+			/* Create two unequal columns that sits next to each other */
+			/* Sidebar/left column */
+			
+			.side{
+				flex:30%;
+				background-color:#f1f1f1;
+				padding:20px;
+			}
+			
+			/* Main column */
+			
+			.main{
+				flex:70%;
+				background-color:white;
+				padding:20px;
+			}
+			
+			.h2{
+				color:darkslategrey;
+				font-family:cursive;
+				text-align:center;
+			}
+			
+			.container{
+				max-width:1200px;
+				margin:auto;
+				overflow:auto;
+			}
+			
+			.gallery{  
+				margin:5px;
+				border:3px inset #ccc;
+				float:left;
+				width:300px;
+				padding-left:40px;
+				padding-right:40px;
+			}
+			
+			.gallery img{
+				width:300px;
+				height:300px;
+			}
+			
+			.desc{
+				padding:20px;
+				text-align:center;
+				color:#24478f;
+				font-family:cursive;
+			}
+			
+			/* Footer */
+			/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+			
+			@media screen and (max-width:700px){
+				.row, .navbar {   
+					flex-direction:row;
+				}
+			}
+			
+			#tb1{
+				max-width: 100%;
+				height: 100%;
+			}
+			
+			.footer {
+				padding:10px;
+				text-align:center;
+				background:#aaa;
+				padding-bottom:20px;
+			}
+			
+			.pagination{
+				display:inline-block;
+			}
+			
+			.pagination a{
+				color:black;
+				float:left;
+				padding:18px 28px;
+				text-decoration:none;
+			}
+			
+			.pagination a.active{
+				background-color:darkslategray;
+				color:white;
+			}
+			
+			.pagination a:hover:not(.active){
+				background-color:#ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div style="background:#595959;padding:8px">
+				<h4></h4>
+			</div>
+			<table style="align-items: center" id ="tb1">
+				<tr>
+					<td>
+						<img class="img1" src="logo3.png" width="400" height="170px"/> 
+					</td> 
+					<td>
+						<h4 class="pn1">................................................</h4>
+					</td>
+					<td>
+						<h3 class="p1" style="text-align:center">Avec Génie Face pour la sécurité <br>ne pouvez entrer que par votre identité  </h3>
+					</td>    
+					<td>
+						<h4 class="pn2">........................................................................................................;;;  </h4>
+					</td>
+				</tr>    
+			</table>
+			<!-- Navigation Bar -->
+			<!-- Header -->
+			<!-- Navigation Bar -->
+			<ul>
+				<li><a href="projet2.html">Accueil</a></li>
+				<li><a href="Equipe.html">Qui sommes nous ?</a></li>
+				<li><a class="active" href="Produit.html">Composants utilisés</a></li>
+				<li><a href="ESP32.html">Contactez-nous</a></li>
+			</ul>
+			<img src="g%C3%A9nieface.png" width="100%" height="480px">
+			<!-- The flexible grid (content) -->
+			<div class="main">
+				<h2 class="h2">Les matériels et les logiciels utilisé à la réalisation du projet </h2>
+				<div class="container">
+					<div class="gallery">
+						<img src="arduino-uno.jpg">
+						<div class="desc">Arduino-uno</div>          
+					</div>
+					<div class="gallery">
+						<img src="cable%20de%20connction%20bleu.jpg">
+						<div class="desc">Cable de connection</div>        
+					</div>
+					<div class="gallery">
+						<img src="Cable%20male%20%C3%A0%20male.jfif">
+						<div class="desc">Jumper cables</div>       
+					</div>
+					<div class="gallery">
+						<img src="FTDI%20FT232RL.jpg">
+						<div class="desc">TTL connecteur</div>         
+					</div>
+					<div class="gallery">
+						<img src="FdOussama.jfif">
+						<div class="desc">RFID et TAG</div>         
+					</div>
+					<div class="gallery">
+						<img src="servomoteur.jpg">
+						<div class="desc">Servo motor</div>         
+					</div>
+					<div class="gallery">
+						<img src="OussamaFd.jfif">
+						<div class="desc">ESP32-S CAM (CAMERA)</div>         
+					</div>
+					<div class="gallery">
+						<img src="logo%20ard.jfif">
+						<div class="desc">logiciel Aerduino IDE</div>         
+					</div>
+					<div class="gallery">
+						<img src="exel.png">
+						<div class="desc">Exel comunnication VBA</div>         
+					</div>   
+				</div>
+				<pre>
+        
+				</pre>
+				<div class="pagination">
+					<a href="projet2.html">&laquo;</a>
+					<a href="projet2.html">1</a>
+					<a href="Equipe.html">2</a>
+					<a class="active" href="Produit.html">3</a>
+					<a href="ESP32.html">4</a>
+					<a href="ESP32.html">&raquo;</a>
+				</div>
+				<!-- Footer -->
+			</div>
+			<div class="footer">
+				<h2>Vous pouvez également nous trouver sur les réseaux sociaux.</h2>
+  <div class="somedia">
+		<a href="https://www.youtube.com/channel/UCFxJDlZPDuSc_5_7FVEsxfw/?guided_help_flow=5" class="social"><img src="youtube.png" alt="Youtube"><div class="youtube"></div></a>
+		<a href="https://t.me/joinchat/PJEFtkm0axWxrHkbtiuaSg" class="social"><img src="telegram.png" alt="Telegram"><div class="telegram"></div></a>
+		<a href="https://www.facebook.com/G%C3%A9nie-Face-109413884046757/" class="social"><img src="facebook.png" alt="Facebook"><div class="facebook"></div></a>
+		<a href="https://chat.whatsapp.com/IP0A769P2DS8OfTHfGlUHd" class="social"><img src="whatsapp.png" alt="Whatsapp"><div class="whatsapp"></div></a>
+		<a href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSGKnGdhwzkzPbDfnXWMjmnhWRppHcPtFgDfhbkKdWztjsSFvtKfLdFhxXPSdMDdSjXZPQCM" class="social"><img src="gmail.png" alt="Gmail"><div class="gmail"></div></a>
+		<a href="https://twitter.com/face_genie" class="social"><img src="twitter.png" alt="Twitter"><div class="twitter"></div></a>
+		<a href="https://www.instagram.com/genieface2020?r=nametag" class="social"><img src="instagram.png" alt="Instagram"><div class="instagram"></div></a>
+	</div>
+			</div>
+		</div> 
+		
+	</body>
+</html>
