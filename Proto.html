@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Génie Face</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		
+ <!-- /* ----START OF SOCIALMEDIA'S CSS---- */ -->
+
+.somedia{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.social{
+	position:relative;
+	<!-- background-color:rgba(0,0,0,0.2); -->
+	width:90px;
+	height::90px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:20%;
+	overflow:hidden;
+	margin-left: 35px;
+}
+.social img{
+	z-index:2;
+	width:90px;
+	height:90px;
+}
+.facebook, .whatsapp, .instagram, .youtube, .gmail, .twitter, .telegram{
+	top:-90px;
+	z-index:1;
+	display:block;
+	height:90px;
+	width:90px;
+	position:absolute;
+	transition:0.5s;
+	background-color:#55acec;
+}
+.facebook{
+	background-color:#3b5998;
+}
+.whatsapp{
+	background-color:#25d366;
+}
+.instagram{
+	background-color:#c32aa3;
+}
+.youtube{
+	background-color:#ff0000;
+}
+.telegram{
+	background-color:#0088cc;
+}
+.gmail{
+	background-color:#ea4335;
+}
+.twitter{
+	background-color:#1da1f2;
+}
+.social:hover .facebook{
+	top:0;
+}
+.social:hover .whatsapp{
+	top:0;
+}
+.social:hover .instagram{
+	top:0;
+}
+.social:hover .youtube{
+	top:0;
+}
+.social:hover .gmail{
+	top:0;
+}
+.social:hover .twitter{
+	top:0;
+}
+.social:hover .telegram{
+	top:0;
+}
+
+<!-- /* ----END OF SOCIALMEDIA'S CSS---- */ -->
+
+			*{
+				box-sizing:border-box;
+			}
+			
+			.page{
+				width:1700px;
+				margin:auto;
+				font-family:'Source sans Pro', calibri , Tahoma ,sans-ser;
+				font-size:19px;
+				border-width:4px;
+				border-style:outset;
+				border-color:cadetblue;
+			}
+
+			.logo{
+				background-color:#ebebe0;
+			}
+			
+			table{
+				display:table;
+				background-color:#ebebe0;
+			}
+			
+			.img1{
+				float:none;
+			}
+			
+			.pn1{
+			color:#ebebe0;
+			}
+			
+			.tb3{
+				background-color:white;
+			}
+			
+			.p1{
+				line-height:2em;
+				font-family:fantasy;
+				color:#595959;
+                font-size: 25px;
+                
+			}
+			
+			.pn2{
+				color:#ebebe0;
+			}
+			
+			body{
+				font-family:Arial;
+				margin:0;
+			}
+
+			/* Style the top navigation bar */
+
+			ul{
+				list-style-type: none;
+				margin:0;
+				padding:0;
+				overflow:hidden;
+				background-color:#333;
+				position:-webkit-sticky; /* Safari */
+				position:sticky;
+				top:0;
+			}
+
+			li{
+				float:left;
+			}
+
+			li a{
+				display:block;
+				color:white;
+				text-align:center;
+				font-family:monospace;  
+				padding:15px 17px;
+				text-decoration:none;
+			}
+
+			li a:hover{
+				background-color:darkslategrey;
+			}
+
+			.active{
+				background-color:#008080;
+			}
+			
+			.row{  
+				display:flex;
+				flex-wrap:wrap;
+			}
+
+			/* Create two unequal columns that sits next to each other */
+			/* Sidebar/left column */
+			
+			.side{
+				<!-- flex:22%; -->
+				background-color:#f1f1f1;
+				padding:20px;
+			}
+			
+			.h22{
+				color:#333;
+				font-family:inherit ;
+				font-size:25px;
+			}
+			
+			.logof{
+				border:solid;
+				border-color:gray;
+			}
+
+			/* Main column */
+			
+			.main{
+				flex:70%;
+				background-color:white;
+				padding:20px;
+			}
+			
+			.h2{
+				color:darkslategrey;
+				font-family:cursive;
+				text-align:center;
+			}
+
+			/* Fake image, just for this example */
+			
+			.fakeimg{
+				background-color:#aaa;
+				width:100%;
+				padding:20px;
+			}
+			
+			.proto{
+				color:white;
+			}
+			
+			.protoc{
+				color:white;
+			}
+			
+			.recon{
+				float:center;
+				border-radius:4em;
+			}
+			
+			/* Footer */
+			
+			.footer{
+				padding:10px;
+				text-align:center;
+				background:#aaa;
+				padding-bottom:20px;
+			}
+
+			/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+			
+			@media screen and (max-width: 700px){
+				.row, .navbar{   
+					flex-direction:row;
+				}
+			}
+			
+			#tb1{
+				max-width:100%;
+				height:100%;
+			}
+			
+			pre.alignright{
+				text-align:justify;
+				font-size:20px;
+				color:black;
+				line-height:1.7em;  
+			}
+			
+			.text{
+				font-family:fantasy;
+				font-size:30px;
+				color:#333;
+				font-style:oblique;
+			}
+
+			float: left;
+			}
+			
+			.pagination{
+				display:inline-block;
+			}
+
+			.pagination a{
+				color:black;
+				float:left;
+				padding:18px 28px;
+				text-decoration:none;
+			}
+
+			.pagination a.active{
+				background-color:darkslategray;
+				color:white;
+			}
+
+			.pagination a:hover:not(.active){
+				background-color:#ddd;
+			}
+
+		</style>
+	</head>
+	<body>
+<div class="page">
+   
+
+<div style="background:#595959;padding:8px">
+     <h4 ></h4>
+    </div>
+
+<table style="align-items: center" id ="tb1">
+    <tr >
+        <td>
+            <a href="index.html"> <img class="img1" src="logo3.png" width="400"
+				height="170px"/> </a>
+            </td> 
+        <td><h4 class="pn1">................................................</h4></td>
+        <td> <pre class="p1" style="text-align:center" >                Avec génie face votre identité est <br>                  la seule clé de votre sécurité  </pre >  </td>    
+        <td><h4 class="pn2">.........................................................................................................  </h4>
+        </td>
+     
+           </tr>    
+         </table>
+    
+        
+<!-- Navigation Bar -->
+<!-- Header -->
+
+<!-- Navigation Bar -->
+<ul>
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="Equipe.html">Qui sommes nous ? </a></li>
+  <li><a href="Produit.html">Composants utilisés</a></li>
+  <li><a class="active" href="Proto.html">Prototype</a></li>
+  <li><a href="Gantt.html">GANTT et PERT</a></li>
+  <li><a href="ESP32.html">Contactez-nous</a></li>
+ 
+</ul>
+     <img src="redaaff.jfif" width="100%"  height="480px"   >
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+      <pre>
+      
+      
+      
+      
+      
+      
+      </pre>
+    <h2 class="text">  Génie Face Sécurité  </h2>
+      <pre class="h22">
+       Equipe 100% dédiée 
+          ses efforts pour 
+    protérger vos activités
+
+</pre>
+    
+   <img class="logof" src="BANNIERE_LG.png" width="300px" height="200pX">
+    
+      <pre class="h22">
+      
+       Equipe de la faculté
+ des sciences et techniques 
+             de Tanger
+
+</pre>
+      <img class="logof" src="logofst.png" width="300px" height="200pX">  
+  </div>
+  <div class="main">
+    
+    
+       <h2 class="h2">Présentation de <strong>prototype </strong> </h2>
+     <hr>
+      <pre>
+      </pre>
+      
+      <table class="tb3">
+          <td><p class="proto">.................</p></td>
+          <td>
+      <video width="1100"  controls>
+  <source src="abc.mp4" type="video/mp4">
+
+  Your browser does not support HTML5 video.
+</video>
+          </td>
+      </table>
+<pre class="alignright">
+                                        <strong> Lien du vidéo <a href="https://www.youtube.com/watch?v=c7Rxc4nIItU" target="_blank">Génie Face</a>.</strong>
+</pre>
+
+      
+       <!-- <pre class="alignright" >   -->
+       <!-- <strong>       "Genie Face"</strong> est une équipe composée de 11 personnes qui sont des étudiants à  la faculté des Sciences et -->
+       <!-- Techniques de Tanger ,  notre projet  a pour objectif global de Créer un système de sécurité en se basant -->
+       <!-- sur l'intelligence artificielle (IA) qui donnera à l’utilisateur la  possibilité de passer la frontière et -->
+       <!-- assurer  son accès dans le domaine médicale . -->
+       <!-- Le projet relèvera quelques défis spécifiques de la sécurité de tous les hôpitaux,laboratoires généraux, -->
+       <!-- centres de tests sanguins et centres de radiologie, à savoir comment traiter les données d’une manière  -->
+       <!-- efficace et  l’encouragement de la dépendance aux nouvelles technologies, et la réponse aux problèmes -->
+       <!-- touchant aux données et à l’information dans le domaine qu’on le sait très bien grâce à nos sorties de -->
+       <!-- suggestions et d'enquêtes vers les cliniques et les laboratoires. -->
+       
+       
+       <!-- </pre>  -->
+      <hr>
+      <h2 class="h2">Comment on a géré les risques durant toute la période du travail ?</h2>
+      
+     <pre class="alignright">              
+	 
+	 <strong>	Face à la situation qu'on a confrontée et les procédures prises dans plusieurs payes 
+	 comme la nôtre et l’importance de les respecter, on a trouvé devant un projet qui n’est pas 
+	 encore complété,donc il est indispensable de procéder à une étude complète et suivie une 
+	 démarche et des étapes qui sont bien précises afin d'accomplir notre projet au maximum. </strong>
+	 
+	 <strong>	Notre projet sous le nom « génie face » avait des membres d’équipe qui sont présentés 
+	 dans toutes les réunions, ils sont très actifs, soit pendant la période éducative normale soit 
+	 pendant cette situation, donc durant cette dernière période, on a fait des réunions via « zoom » 
+	 pour bien discuter les différentes circonstances qu’on a envisagées sans oublier de répartir les 
+	 tâches de nouveau d’une manière plus efficace, on a pris ègalement des solutions et des dècisions 
+	 convenables dans le but d’atteindre notre objectif, de même on a utilisé les médias sociaux pour 
+	 accompagner le déroulement de notre projet étape par étape.  </strong>
+	 
+	 <strong>	Ce qui concerne la partie matérielle et technique conceptionnel, on a déjà fait la partie
+	 essentielle de travail mais malheureusement à cause de cette crise on n’a pas le pouvoir de se 
+	 rencontrer pour travailler en équipe afin d’accomplir ce qui reste de la partie technique, c’est 
+	 pour cela on a vu que la meilleure façon de continuer le travail à distant et de charger un parmi
+	 nous de compléter cette partie chez lui, à l’aide de la documentation et les outils nécessaires , 
+	 sous l'égide de l’observation de tous les membres ont utilisé les réseaux sociaux où’ils sont tous
+	 simplement des facilitateurs d’échange d’informations. </strong>
+	 
+	 <strong>	Cette nouvelle répartition des tâches est une identification de nouvelle responsabilité 
+	 pour « génie face », et grâce à l’obstination et l’insistance de chaque membre, le risque associe 
+	 au corona-virus à aucun effet sur l’avancement de travail. </strong>
+      
+     
+      </pre>
+     
+     
+      
+      <hr>
+       
+    
+
+ <div class="pagination">
+  <a href="index.html">&laquo;</a>
+  <a href="index.html">1</a>
+  <a href="Equipe.html">2</a>
+  <a href="Produit.html">3</a>
+  <a class="active" href="Proto.html">4</a>
+  <a href="Gantt.html">5</a>
+  <a href="ESP32.html">6</a>
+  <a href="ESP32.html">&raquo;</a>
+</div>
+
+  
+
+
+		<!-- Footer -->
+
+		</div>
+
+
+		</div>
+		<div class="footer">
+		<h2>Vous pouvez également nous trouver sur les réseaux sociaux.</h2>
+  <div class="somedia">
+		<a href="https://www.youtube.com/channel/UCFxJDlZPDuSc_5_7FVEsxfw/?guided_help_flow=5" class="social"><img src="youtube.png" alt="Youtube"><div class="youtube"></div></a>
+		<a href="https://t.me/joinchat/PJEFtkm0axWxrHkbtiuaSg" class="social"><img src="telegram.png" alt="Telegram"><div class="telegram"></div></a>
+		<a href="https://www.facebook.com/G%C3%A9nie-Face-109413884046757/" class="social"><img src="facebook.png" alt="Facebook"><div class="facebook"></div></a>
+		<a href="https://chat.whatsapp.com/IP0A769P2DS8OfTHfGlUHd" class="social"><img src="whatsapp.png" alt="Whatsapp"><div class="whatsapp"></div></a>
+		<a href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSGKnGdhwzkzPbDfnXWMjmnhWRppHcPtFgDfhbkKdWztjsSFvtKfLdFhxXPSdMDdSjXZPQCM" class="social"><img src="gmail.png" alt="Gmail"><div class="gmail"></div></a>
+		<a href="https://twitter.com/face_genie" class="social"><img src="twitter.png" alt="Twitter"><div class="twitter"></div></a>
+		<a href="https://www.instagram.com/genieface2020?r=nametag" class="social"><img src="instagram.png" alt="Instagram"><div class="instagram"></div></a>
+	</div>
+
+		</div>
+
+
+
+
+		</div>
+	</body>
+</html>
